@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/harishbitcse82/MyMavenApp.git'
+                git branch: 'master', url: 'https://github.com/sanjanajayaram2005-ops/usn192-bit.git'
             }
         }
 
@@ -29,7 +29,7 @@ pipeline {
         stage('Run Application') {
             steps {
                 // Start the JAR application
-                sh 'java -jar target/MyMavenApp-1.0-SNAPSHOT.jar'
+                sh 'java -jar target/usn192-bit-1.0-SNAPSHOT.jar'
             }
         }
 
